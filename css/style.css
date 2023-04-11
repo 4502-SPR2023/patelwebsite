@@ -36,6 +36,7 @@ div .media {
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  text-align: center;
 }
 
 div .copy {
@@ -93,13 +94,17 @@ section .location {
 img {
   height: auto;
   max-width: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .featured{
   display: flex;
   height: auto;
   max-width: 75%;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: auto;
 }
 
 h1 {
@@ -119,11 +124,10 @@ h2{
 h3{
   font-family: 'Fira Sans', sans-serif;
 }
-p{
-}
 
-.caption{
+figcaption{
   font-size: .75rem;
+  text-align: center;
 }
 
 footer {
@@ -184,6 +188,21 @@ footer {
   justify-content: center;
   align-items: center;
 
+}
+
+.button_holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+button {
+  background-color: gold;
+  border-color: brown;
+  border-radius: 5pt;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+  color: brown;
+  width: 5rem;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
