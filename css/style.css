@@ -205,6 +205,20 @@ button {
   width: 5rem;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px){
   div .book {
