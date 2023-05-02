@@ -1,9 +1,11 @@
 /*
-font-family: 'Fira Sans', sans-serif;
-font-weight: 'Black 900', bold;
-font-weight: 'Semibold 600', normal;
+font-family: 'Oswald', sans-serif;
+font-weight: 'Regular 400';
+font-weight: 'Semibold 600'; bold;
 
-font-family: 'Cardo', serif;
+
+font-weight: 'Regular 400';
+font-weight: 'Bold 700'; bold;
 
 Colors
 Text color: rgb(27, 59, 70)
@@ -13,7 +15,6 @@ Additional color(s): rgb(182, 186, 195)
 
 body {
   width: 75%;
-  padding: 15px 10px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -24,10 +25,14 @@ body {
   color: rgb(27, 59, 70);
   background-color: rgb(235, 221, 212)
 }
+
 header{
   margin: -1;
-  background-color: gold;
-  padding:2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 'Regular 400';
+  background-color: rgb(182, 186, 195);
+  color: rgb(27, 59, 70)
+  padding: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -113,21 +118,21 @@ img {
 }
 
 h1 {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 'Black 900', bold;
-  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 'Semibold 600'; bold;  text-align: center;
   font-size: 3em;
 }
 
 h2{
-  font-family: 'Libre Caslon Text', serif;
-  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 'Regular 400';
   text-align: center;
   font-size: 2em;
 }
 
 h3{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Quattrocento', serif;
+  font-weight: 'Bold 700'; bold;
 }
 
 figcaption{
@@ -140,12 +145,13 @@ figcaption{
   bottom: 8px;
   max-width: 75%;
   text-align: center;
-  font-family: 'Cardo', serif;
+  font-family: 'Quattrocento', serif;
+  font-weight: 'Regular 400';
 }
 
 footer {
   text-decoration-color: none;
-  background-color: #581908;
+  background-color: rgb(182, 186, 195);
   font-size: .75em;
   width: 100%;
   margin: 2rem, 0,0,0;
@@ -164,37 +170,35 @@ header .nav ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #gold;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 'Bold 700', bolder;
 
 }
 li a {
   list-style-type: none;
   display: inline-flex;
-  color: brown;
+  color: rgb(27, 59, 70);
   text-align: center;
-  padding: 1rem 1.5rem;
+  padding: 2rem;
   text-decoration: none;
   float: left;
 }
 
 li a:hover:not(.active) {
   list-style-type: none;
-  background-color: #gold;
+  background-color: rgb(235, 221, 212);
 }
 
 .active {
   list-style-type: none;
-  background-color: #gold;
+  background-color: rgb(235, 221, 212);
 }
 
 footer {
   text-decoration-color: none;
-  font-family: 'Cardo', serif;
+  font-family: 'Quattrocento', serif;
+  font-weight: 'Regular 400';
   background-color: rgb(182, 186, 195);
   width: 100%;
-  margin: 2rem, 0,0,0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,11 +211,11 @@ footer {
   margin-bottom: 2rem;
 }
 button {
-  background-color: gold;
-  border-color: brown;
+  background-color: rgb(182, 186, 195);
+  border-color: rgb(27, 59, 70);
   border-radius: 5pt;
-  font-family: 'Cardo', serif;
-  color: rgb(27, 59, 70);
+  font-family: 'Quattrocento', serif;
+  font-weight: 'Bold 700'; bold;  color: rgb(27, 59, 70);
   width: 5rem;
 }
 
@@ -228,6 +232,76 @@ button {
   width: auto;
   height: auto;
 }
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(27, 59, 70);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(182, 186, 195,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px){
