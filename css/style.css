@@ -3,9 +3,7 @@ font-family: 'Oswald', sans-serif;
 font-weight: 'Regular 400';
 font-weight: 'Semibold 600'; bold;
 
-font-family: 'Quattrocento', serif;
-font-weight: 'Regular 400';
-font-weight: 'Bold 700'; bold;
+font-family: 'Cardo', serif;
 
 Colors
 Text color: rgb(27, 59, 70)
@@ -20,7 +18,7 @@ body {
   justify-content: center;
   align-items: space-around;
   flex-direction: column;
-  font-family: 'Quattrocento', serif;
+
   font-weight: 'Regular 400';
   color: rgb(27, 59, 70);
   background-color: rgb(235, 221, 212)
@@ -131,8 +129,7 @@ h2{
 }
 
 h3{
-  font-family: 'Quattrocento', serif;
-  font-weight: 'Bold 700'; bold;
+  font-family: 'Cardo', serif;
 }
 
 figcaption{
@@ -145,8 +142,7 @@ figcaption{
   bottom: 8px;
   max-width: 75%;
   text-align: center;
-  font-family: 'Quattrocento', serif;
-  font-weight: 'Regular 400';
+  font-family: 'Cardo', serif;
 }
 
 footer {
@@ -194,8 +190,7 @@ li a:hover:not(.active) {
 
 footer {
   text-decoration-color: none;
-  font-family: 'Quattrocento', serif;
-  font-weight: 'Regular 400';
+  font-family: 'Cardo', serif;
   background-color: rgb(182, 186, 195);
   width: 100%;
   margin: auto;
@@ -214,8 +209,8 @@ button {
   background-color: rgb(182, 186, 195);
   border-color: rgb(27, 59, 70);
   border-radius: 5pt;
-  font-family: 'Quattrocento', serif;
-  font-weight: 'Bold 700'; bold;  color: rgb(27, 59, 70);
+  font-family: 'Cardo', serif;
+  color: rgb(27, 59, 70);
   width: 5rem;
 }
 
