@@ -1,7 +1,7 @@
 /*
-font-family: 'Oswald', sans-serif;
-font-weight: 'Regular 400';
-font-weight: 'Semibold 600'; bold;
+font-family: 'Fira Sans', sans-serif;
+font-weight: 'Black 900', bold;
+font-weight: 'Semibold 600', normal;
 
 font-family: 'Cardo', serif;
 
@@ -13,6 +13,7 @@ Additional color(s): rgb(182, 186, 195)
 
 body {
   width: 75%;
+  padding: 15px 10px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -23,14 +24,10 @@ body {
   color: rgb(27, 59, 70);
   background-color: rgb(235, 221, 212)
 }
-
 header{
   margin: -1;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 'Regular 400';
-  background-color: rgb(182, 186, 195);
-  color: rgb(27, 59, 70)
-  padding: 1.5rem;
+  background-color: gold;
+  padding:2rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -116,20 +113,21 @@ img {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 'Semibold 600'; bold;  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Black 900', bold;
+  text-align: center;
   font-size: 3em;
 }
 
 h2{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 'Regular 400';
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: bold;
   text-align: center;
   font-size: 2em;
 }
 
 h3{
-  font-family: 'Cardo', serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 figcaption{
@@ -147,7 +145,7 @@ figcaption{
 
 footer {
   text-decoration-color: none;
-  background-color: rgb(182, 186, 195);
+  background-color: #581908;
   font-size: .75em;
   width: 100%;
   margin: 2rem, 0,0,0;
@@ -166,26 +164,29 @@ header .nav ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #gold;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
 
 }
 li a {
   list-style-type: none;
   display: inline-flex;
-  color: rgb(27, 59, 70);
+  color: brown;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   float: left;
 }
 
 li a:hover:not(.active) {
   list-style-type: none;
-  background-color: rgb(235, 221, 212);
+  background-color: #gold;
 }
 
 .active {
   list-style-type: none;
-  background-color: rgb(235, 221, 212);
+  background-color: #gold;
 }
 
 footer {
@@ -193,7 +194,7 @@ footer {
   font-family: 'Cardo', serif;
   background-color: rgb(182, 186, 195);
   width: 100%;
-  margin: auto;
+  margin: 2rem, 0,0,0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,8 +207,8 @@ footer {
   margin-bottom: 2rem;
 }
 button {
-  background-color: rgb(182, 186, 195);
-  border-color: rgb(27, 59, 70);
+  background-color: gold;
+  border-color: brown;
   border-radius: 5pt;
   font-family: 'Cardo', serif;
   color: rgb(27, 59, 70);
@@ -227,76 +228,6 @@ button {
   width: auto;
   height: auto;
 }
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(27, 59, 70);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgb(182, 186, 195,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px){
